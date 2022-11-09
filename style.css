@@ -7,12 +7,16 @@
   } */
 
   #container-box{
-    background-color: black;
+    background-color: white;
     font-size: 2vh;
-    color: cornsilk;
+    color: black;
     text-align: center;
   }
   
   .cat-poster{
     width: 10rem;
   }
+
+body{
+  margin: 0%;
+}
