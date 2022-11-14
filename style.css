@@ -4,7 +4,13 @@
     color: cornsilk;
     height: 100vh;
     text-align: center;
-  } */
+  } 
+    .cat-poster{
+    width: 10rem;
+  }
+
+  
+  */
 
   #container-box{
     background-color: white;
@@ -13,14 +19,15 @@
     text-align: center;
   }
   
-  .cat-poster{
-    width: 10rem;
-  }
+.form-input, .hero-form-input{
+  text-align: center;
+}
+
 
 body{
   margin: 0%;
 }
 
 button{
-  font-size: 5vh;
+  font-size: 1vh;
 }

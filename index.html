@@ -7,7 +7,34 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="container-box">
+    <h1>
+      Make a wacky planet! (Except you only have a few options to choose from)
+    </h1>
+    <section class="form-parent">
+      <form id="form">
+        <div class="form-input">
+          <label for="title">Type of Planet</label>
+          <input type="text" id="planet" class="text-box" required />
+        </div>
+        <div class="form-input">
+          <label for="building">Type of Building</label>
+          <input type="text" id="building" class="text-box" required />
+        </div>
+        <div class="form-input">
+          <label for="Creature">Creature</label>
+          <input type="text" id="creature" class="text-box" required />
+        </div>
+        <div class="hero-form-input">
+          <input type="submit" value="Submit" class="btn" />
+        </div>
+      </form>
+    </section>
+    <section class="display" id="display">
+      <div class="display-planet">
+        <button class="remove-planet">Delete planet</button>
+      </div>
+    </section>
+    <!--     <div id="container-box">
       <p id="text">
         The amazing wacky crazy absurd unbelievable bananas new and improved
         first edition original copy signed by author self-made generically
@@ -19,14 +46,14 @@
       <button type="sendbutton" id="send-btn">Send</button>
       <button type="clearbutton" id="clear-btn">Clear</button>
       <button type="sendclear" id="sendclear-btn">Send and Clear</button>
-      <div id="output-box"></div>
       <button type="delete" id="delete-btn">Delete</button>
-      <!--       <ul>
+      <div id="output-box"></div>
+             <ul>
         <li class="point">1</li>
         <li class="point">2</li>
         <li class="point">3</li>
-      </ul> -->
-    </div>
+      </ul> 
+    </div> -->
     <script src="index.js"></script>
   </body>
 </html>
