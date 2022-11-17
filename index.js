@@ -4,7 +4,7 @@ const DOMSelectors = {
   building: document.getElementById("#building"),
   creature: document.getElementById("#creature"),
   display: document.getElementById("display"),
-  delete: document.getElementById("remove-planet"),
+  delete: document.getElementById("removeplanet"),
   /*   sendbutton: document.getElementById("send-btn"),
   containerbox: document.getElementById("container-box"),
   outputbox: document.getElementById("output-box"),
@@ -20,6 +20,12 @@ function makeCard() {
     DOMSelectors.display.insertAdjacentElement("beforeend", `<p>${input}</p>`);
   });
 }
+
+DOMSelectors.removeplanet.input.addEventListener("click", function () {
+  let input = DOMSelectors.input.value;
+  DOMSelectors.outputbox.insertAdjacentHTML("beforeend", `<p>${input}</p>`);
+  DOMSelectors.outputbox.innerHTML = "";
+});
 
 document.getElementById("form").addEventListener("submit", function (e) {
   e.preventDefault();
