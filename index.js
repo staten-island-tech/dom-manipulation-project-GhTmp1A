@@ -1,10 +1,13 @@
 const DOMSelectors = {
   input: document.querySelector("#display"),
-  planet: document.getElementById("#planet"),
+  planet: document.getElementById("planet"),
   building: document.getElementById("#building"),
-  creature: document.getElementById("#creature"),
+  creature: document.getElementById("creature"),
   display: document.getElementById("display"),
-  delete: document.getElementById("removeplanet"),
+  /*   delete: document.getElementById("removeplanet"), */
+
+  winterimage: document.querySelector("#Winter"),
+  winterbutton: document.getElementById("bwinter"),
   /*   sendbutton: document.getElementById("send-btn"),
   containerbox: document.getElementById("container-box"),
   outputbox: document.getElementById("output-box"),
@@ -14,6 +17,11 @@ const DOMSelectors = {
   deletebutton: document.getElementById("delete-btn"), */
 };
 
+DOMSelectors.winterbutton.addEventListener("click", function () {
+  let winter = DOMSelectors.winterimage;
+  winter.style.visibility = "visible";
+});
+
 function makeCard() {
   DOMSelectors.input.addEventListener("submit", function () {
     let input = DOMSelectors.input.value;
@@ -21,11 +29,11 @@ function makeCard() {
   });
 }
 
-DOMSelectors.removeplanet.input.addEventListener("click", function () {
+/* DOMSelectors.removeplanet.input.addEventListener("click", function () {
   let input = DOMSelectors.input.value;
   DOMSelectors.outputbox.insertAdjacentHTML("beforeend", `<p>${input}</p>`);
   DOMSelectors.outputbox.innerHTML = "";
-});
+}); */
 
 document.getElementById("form").addEventListener("submit", function (e) {
   e.preventDefault();
