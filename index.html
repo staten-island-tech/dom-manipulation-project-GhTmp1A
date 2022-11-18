@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>
+    <h1 class="h1">
       Make a wacky planet! (Except you only have a few options to choose from)
     </h1>
     <section class="form-parent">
@@ -27,11 +27,14 @@
         </div>
         <div class="form-input">
           <label for="Creature">Creature</label>
-
+          <button type="joeButton" id="bjoe">Joe</button>
+          <button type="jonathanButton" id="bjonathan">Jonathan</button>
           <button type="johnButton" id="bjohn">John</button>
+          <button type="voidButton" id="bvoid">Void</button>
         </div>
         <div class="form-input">
-          <label for="Famous-person">Famous person!</label>
+          <input type="text" id="url" class="text-box" required />
+          <label for="url">Famous person!</label>
         </div>
         <div class="hero-form-input">
           <input type="submit" value="Submit" class="btn" required />
@@ -41,8 +44,14 @@
     <section class="display" id="display">
       <div class="planet">
         <img src="imgs/Fall.png" alt="fall planet" class="image" id="fall" />
+        <img src="imgs/Winter.png" alt="Winter" class="image" id="winter" />
+        <img
+          src="imgs/Spring.png"
+          alt="Spring Planet"
+          class="image"
+          id="spring"
+        />
         <img src="imgs/House.png" alt="House" class="image" id="house" />
-        <img src="imgs/John.png" alt="John" class="image" id="john" />
         <img src="imgs/Shack.png" alt="Shack" class="image" id="shack" />
         <img
           src="imgs/Skyscraper.png"
@@ -50,14 +59,16 @@
           class="image"
           id="skyscraper"
         />
-        <img
-          src="imgs/Spring.png"
-          alt="Spring Planet"
-          class="image"
-          id="spring"
-        />
         <img src="imgs/tower.png" alt="Tower" class="image" id="tower" />
-        <img src="imgs/Winter.png" alt="Winter" class="image" id="winter" />
+        <img src="imgs/john.png" alt="John" class="image" id="john" />
+        <img src="imgs/joe.png" alt="Joe" class="image" id="joe" />
+        <img
+          src="imgs/jonathan.png"
+          alt="jonathan"
+          class="image"
+          id="jonathan"
+        />
+        <img src="imgs/void.png" alt="void" class="image" id="void" />
       </div>
       <div class="display-planet">
         <button class="removeplanet">Delete planet</button>

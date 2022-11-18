@@ -8,6 +8,36 @@ const DOMSelectors = {
 
   winterimage: document.querySelector("#Winter"),
   winterbutton: document.getElementById("bwinter"),
+
+  springimage: document.querySelector("#Spring"),
+  springbutton: document.getElementById("bspring"),
+
+  fallimage: document.querySelector("#Fall"),
+  fallbutton: document.getElementById("bfall"),
+
+  houseimage: document.querySelector("#House"),
+  housebutton: document.getElementById("bhouse"),
+
+  towerimage: document.querySelector("#Tower"),
+  towerbutton: document.getElementById("btower"),
+
+  skyscraperimage: document.querySelector("#Skyscraper"),
+  skyscraperbutton: document.getElementById("bskyscraper"),
+
+  shackimage: document.querySelector("#Shack"),
+  shackbutton: document.getElementById("bshack"),
+
+  joeimage: document.querySelector("#Joe"),
+  joebutton: document.getElementById("bjoe"),
+
+  jonathanimage: document.querySelector("#Jonathan"),
+  jonathanbutton: document.getElementById("bjonathan"),
+
+  johnimage: document.querySelector("#John"),
+  johnbutton: document.getElementById("bjohn"),
+
+  voidimage: document.querySelector("#Void"),
+  voidbutton: document.getElementById("bvoid"),
   /*   sendbutton: document.getElementById("send-btn"),
   containerbox: document.getElementById("container-box"),
   outputbox: document.getElementById("output-box"),
@@ -16,10 +46,19 @@ const DOMSelectors = {
   sendclearbutton: document.getElementById("sendclear-btn"),
   deletebutton: document.getElementById("delete-btn"), */
 };
-
 DOMSelectors.winterbutton.addEventListener("click", function () {
   let winter = DOMSelectors.winterimage;
   winter.style.visibility = "visible";
+});
+
+DOMSelectors.housebutton.addEventListener("click", function () {
+  let house = DOMSelectors.houseimage;
+  house.style.visibility = "visible";
+});
+
+DOMSelectors.johnbutton.addEventListener("click", function () {
+  let john = DOMSelectors.johnimage;
+  john.style.visibility = "visible";
 });
 
 function makeCard() {
