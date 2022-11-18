@@ -4,6 +4,7 @@ const DOMSelectors = {
   building: document.getElementById("#building"),
   creature: document.getElementById("creature"),
   display: document.getElementById("display"),
+
   /*   delete: document.getElementById("removeplanet"), */
 
   winterimage: document.querySelector("#Winter"),
@@ -36,8 +37,10 @@ const DOMSelectors = {
   johnimage: document.querySelector("#John"),
   johnbutton: document.getElementById("bjohn"),
 
-  voidimage: document.querySelector("#Void"),
-  voidbutton: document.getElementById("bvoid"),
+  void1image: document.querySelector("#Void1"),
+  void1button: document.getElementById("bvoid1"),
+
+  removeplanet: document.getElementById("bremove"),
   /*   sendbutton: document.getElementById("send-btn"),
   containerbox: document.getElementById("container-box"),
   outputbox: document.getElementById("output-box"),
@@ -46,9 +49,22 @@ const DOMSelectors = {
   sendclearbutton: document.getElementById("sendclear-btn"),
   deletebutton: document.getElementById("delete-btn"), */
 };
+
+var remove = document.querySelector("#bremove");
+
+DOMSelectors.fallbutton.addEventListener("click", function () {
+  let fall = DOMSelectors.fallimage;
+  fall.style.visibility = "visible";
+});
+
 DOMSelectors.winterbutton.addEventListener("click", function () {
   let winter = DOMSelectors.winterimage;
   winter.style.visibility = "visible";
+});
+
+DOMSelectors.springbutton.addEventListener("click", function () {
+  let spring = DOMSelectors.springimage;
+  spring.style.visibility = "visible";
 });
 
 DOMSelectors.housebutton.addEventListener("click", function () {
@@ -56,9 +72,42 @@ DOMSelectors.housebutton.addEventListener("click", function () {
   house.style.visibility = "visible";
 });
 
+DOMSelectors.shackbutton.addEventListener("click", function () {
+  let shack = DOMSelectors.shackimage;
+  shack.style.visibility = "visible";
+});
+
+DOMSelectors.skyscraperbutton.addEventListener("click", function () {
+  let skyscraper = DOMSelectors.skyscraperimage;
+  skyscraper.style.visibility = "visible";
+});
+
+DOMSelectors.towerbutton.addEventListener("click", function () {
+  let tower = DOMSelectors.towerimage;
+  tower.style.visibility = "visible";
+});
+
 DOMSelectors.johnbutton.addEventListener("click", function () {
   let john = DOMSelectors.johnimage;
   john.style.visibility = "visible";
+});
+
+DOMSelectors.joebutton.addEventListener("click", function () {
+  let joe = DOMSelectors.joeimage;
+  joe.style.visibility = "visible";
+  john.style.visibility = "hidden";
+  jonathan.style.visibility = "hidden";
+  void1.style.visibility = "hidden";
+});
+
+DOMSelectors.jonathanbutton.addEventListener("click", function () {
+  let jonathan = DOMSelectors.jonathanimage;
+  jonathan.style.visibility = "visible";
+});
+
+DOMSelectors.void1button.addEventListener("click", function () {
+  let void1 = DOMSelectors.void1image;
+  void1.style.visibility = "visible";
 });
 
 function makeCard() {
