@@ -9,40 +9,39 @@ const DOMSelectors = {
   /*   delete: document.getElementById("removeplanet"), */
 
   winterimage: document.querySelector("#Winter"),
-  winterbutton: document.getElementById("bwinter"),
+  wintercheckbox: document.getElementById("bwinter"),
 
   springimage: document.querySelector("#Spring"),
-  springbutton: document.getElementById("bspring"),
+  springcheckbox: document.getElementById("bspring"),
 
   fallimage: document.querySelector("#Fall"),
-  fallbutton: document.getElementById("bfall"),
+  fallcheckbox: document.getElementById("bfall"),
 
   houseimage: document.querySelector("#House"),
-  housebutton: document.getElementById("bhouse"),
+  housecheckbox: document.getElementById("bhouse"),
 
   towerimage: document.querySelector("#Tower"),
-  towerbutton: document.getElementById("btower"),
+  towercheckbox: document.getElementById("btower"),
 
   skyscraperimage: document.querySelector("#Skyscraper"),
-  skyscraperbutton: document.getElementById("bskyscraper"),
+  skyscrapercheckbox: document.getElementById("bskyscraper"),
 
   shackimage: document.querySelector("#Shack"),
-  shackbutton: document.getElementById("bshack"),
+  shackcheckbox: document.getElementById("bshack"),
 
   joeimage: document.querySelector("#Joe"),
-  joebutton: document.getElementById("bjoe"),
+  joecheckbox: document.getElementById("bjoe"),
 
   jonathanimage: document.querySelector("#Jonathan"),
-  jonathanbutton: document.getElementById("bjonathan"),
+  jonathancheckbox: document.getElementById("bjonathan"),
 
   johnimage: document.querySelector("#John"),
-  johnbutton: document.getElementById("bjohn"),
+  johncheckbox: document.getElementById("bjohn"),
 
   void1image: document.querySelector("#Void1"),
-  void1button: document.getElementById("bvoid1"),
+  void1checkbox: document.getElementById("bvoid1"),
 
   createplanetbutton: document.getElementById("bcreate"),
-  removeplanet: document.getElementById("bremove"),
   /*   sendbutton: document.getElementById("send-btn"),
   containerbox: document.getElementById("container-box"),
   outputbox: document.getElementById("output-box"),
@@ -52,22 +51,22 @@ const DOMSelectors = {
   deletebutton: document.getElementById("delete-btn"), */
 };
 
-DOMSelectors.displayplanet.insertAdjacentHTML(
+/* DOMSelectors.displayplanet.insertAdjacentHTML(
   `beforeend`,
-  `<div class = "createplanetfull"></div>`,
+  `<div class = "createplanet"></div>`,
   `<button type="removeplanetButton" id="bremove" class="removeplanet">
 Delete planet
 </button>`
-);
+); */
 
-DOMSelectors.fallbutton.addEventListener("click", function () {
+/* DOMSelectors.fallbutton.addEventListener("click", function () {
   let fall = DOMSelectors.fallimage;
   fall.style.visibility = "visible";
   winter.style.visibility = "hidden";
   spring.style.visibility = "hidden";
-});
+}); */
 
-bremove.addEventListener("click", function () {
+/* bremove.addEventListener("click", function () {
   bremove.remove();
 
   fall.style.visibility = "hidden";
@@ -81,8 +80,8 @@ bremove.addEventListener("click", function () {
   john.style.visibility = "hidden";
   jonathan.style.visibility = "hidden";
   void1.style.visibility = "hidden";
-});
-
+}); */
+/* 
 DOMSelectors.winterbutton.addEventListener("click", function () {
   let winter = DOMSelectors.winterimage;
   fall.style.visibility = "hidden";
@@ -160,7 +159,7 @@ DOMSelectors.void1button.addEventListener("click", function () {
   jonathan.style.visibility = "hidden";
   void1.style.visibility = "visible";
 });
-
+ */
 /* DOMSelectors.removeplanet.input.addEventListener("click", function () {
   let input = DOMSelectors.input.value;
   DOMSelectors.outputbox.insertAdjacentHTML("beforeend", `<p>${input}</p>`);
@@ -171,31 +170,33 @@ document.getElementById("form").addEventListener("submit", function (e) {
   e.preventDefault();
 });
 
-/*
+// let falltf = 0;
+let wintertf = 0;
+let springtf = 0;
+let housetf = 0;
+let shacktf = 0;
+let skyscrapertf = 0;
+let towertf = 0;
+let johntf = 0;
+let joetf = 0;
+let jonathantf = 0;
+let void1tf = 0;
 
-const falltf = 0;
-const wintertf = 0;
-const springtf = 0;
-const housetf = 0;
-const shacktf = 0;
-const skyscrapertf = 0;
-const towertf = 0;
-const johntf = 0;
-const joetf = 0;
-const jonathantf = 0;
-const void1tf = 0;
-
-DOMSelectors.fallbutton.addEventListener("click", function () {
-  let fall = DOMSelectors.fallimage;
-  let falltf = 1;
-  if (falltf > 0) {
-    fall.style.visibility;
+DOMSelectors.fallcheckbox.addEventListener("click", function () {
+  // let fall = DOMSelectors.fallimage;
+  // let falltf = 1;
+  if (fallcheckbox.checked) {
+    fall.checkbox = "unchecked";
+    spring.checkbox = "unchecked";
+    winter.checkbox = "unchecked";
   } else {
-    fall.style.visibility;
+    fall.checkbox = "hidden";
+    spring.checkbox = "hidden";
+    winter.checkbox = "hidden";
   }
 });
 
-DOMSelectors.winterbutton.addEventListener("click", function () {
+DOMSelectors.wintercheckbox.addEventListener("click", function () {
   let winter = DOMSelectors.winterimage;
   let wintertf = 1;
   if (wintertf > 0) {
@@ -209,7 +210,7 @@ DOMSelectors.winterbutton.addEventListener("click", function () {
   }
 });
 
-DOMSelectors.springbutton.addEventListener("click", function () {
+DOMSelectors.springcheckbox.addEventListener("click", function () {
   let spring = DOMSelectors.springimage;
   let springtf = 1;
   if (springtf > 0) {
@@ -223,7 +224,7 @@ DOMSelectors.springbutton.addEventListener("click", function () {
   }
 });
 
-DOMSelectors.housebutton.addEventListener("click", function () {
+DOMSelectors.housecheckbox.addEventListener("click", function () {
   let house = DOMSelectors.houseimage;
   let housetf = 1;
   if (housetf > 0) {
@@ -239,7 +240,7 @@ DOMSelectors.housebutton.addEventListener("click", function () {
   }
 });
 
-DOMSelectors.shackbutton.addEventListener("click", function () {
+DOMSelectors.shackcheckbox.addEventListener("click", function () {
   let shack = DOMSelectors.shackimage;
   let shacktf = 1;
   if (shacktf > 0) {
@@ -255,7 +256,7 @@ DOMSelectors.shackbutton.addEventListener("click", function () {
   }
 });
 
-DOMSelectors.skyscraperbutton.addEventListener("click", function () {
+DOMSelectors.skyscrapercheckbox.addEventListener("click", function () {
   let skyscraper = DOMSelectors.skyscraperimage;
   let skyscrapertf = 1;
   if (skyscrapertf > 0) {
@@ -271,7 +272,7 @@ DOMSelectors.skyscraperbutton.addEventListener("click", function () {
   }
 });
 
-DOMSelectors.towerbutton.addEventListener("click", function () {
+DOMSelectors.towercheckbox.addEventListener("click", function () {
   let tower = DOMSelectors.towerimage;
   let towertf = 1;
   if (towertf > 0) {
@@ -287,7 +288,7 @@ DOMSelectors.towerbutton.addEventListener("click", function () {
   }
 });
 
-DOMSelectors.johnbutton.addEventListener("click", function () {
+DOMSelectors.johncheckbox.addEventListener("click", function () {
   let john = DOMSelectors.johnimage;
   let johntf = 1;
   if (johntf > 0) {
@@ -303,7 +304,7 @@ DOMSelectors.johnbutton.addEventListener("click", function () {
   }
 });
 
-DOMSelectors.joebutton.addEventListener("click", function () {
+DOMSelectors.joecheckbox.addEventListener("click", function () {
   let joe = DOMSelectors.joeimage;
   let joetf = 1;
   if (joetf > 0) {
@@ -319,7 +320,7 @@ DOMSelectors.joebutton.addEventListener("click", function () {
   }
 });
 
-DOMSelectors.jonathanbutton.addEventListener("click", function () {
+DOMSelectors.jonathancheckbox.addEventListener("click", function () {
   let jonathan = DOMSelectors.jonathanimage;
   let jonathantf = 1;
   if (jonathantf > 0) {
@@ -335,7 +336,7 @@ DOMSelectors.jonathanbutton.addEventListener("click", function () {
   }
 });
 
-DOMSelectors.void1button.addEventListener("click", function () {
+DOMSelectors.void1checkbox.addEventListener("click", function () {
   let void1 = DOMSelectors.void1image;
   let void1tf = 1;
   if (void1tf > 0) {
@@ -356,7 +357,7 @@ DOMSelectors.createplanetbutton.addEventListener("click", function () {
     fall.style.visibility = "visible";
   }
 });
-*/
+
 DOMSelectors.displayplanet.addEventListener("click", function () {
   let createplanet = DOMSelectors.createplanet.create;
 });
