@@ -33,12 +33,15 @@
           <button type="voidButton1" id="bvoid1">Void</button>
         </div>
         <div class="form-input">
-          <input type="text" id="url" class="text-box" required />
+          <input type="text" id="url" class="text-box" />
           <label for="url">Famous person!</label>
         </div>
         <div class="hero-form-input">
-          <input type="submit" value="Submit" class="btn" required />
+          <input type="submit" value="Submit" class="btn" />
         </div>
+        <button type="createButton" class="createplanet" id="bcreate">
+          Create planet
+        </button>
       </form>
     </section>
     <section class="display" id="display">
@@ -72,11 +75,7 @@
         <img src="imgs/void.png" alt="void1" class="image" id="void1" />
       </div>
       <div class="object" id="object"></div>
-      <div class="display-planet">
-        <button type="removeplanetButton" id="bremove" class="removeplanet">
-          Delete planet
-        </button>
-      </div>
+      <div id="displayplanet"></div>
     </section>
     <!--     <div id="container-box">
       <p id="text">
@@ -90,7 +89,7 @@
       <button type="sendbutton" id="send-btn">Send</button>
       <button type="clearbutton" id="clear-btn">Clear</button>
       <button type="sendclear" id="sendclear-btn">Send and Clear</button>
-      <button type="delete" id="delete-btn">Delete</button>
+      <button type=" id="delete-btn">Delete</button>
       <div id="output-box"></div>
              <ul>
         <li class="point">1</li>
