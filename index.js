@@ -187,165 +187,77 @@ DOMSelectors.fallcheckbox.addEventListener("click", function () {
   if (DOMSelectors.fallcheckbox.checked) {
     console.log("The checkbox is checked");
   } else {
-    fall.checkbox = "hidden";
-    spring.checkbox = "hidden";
-    winter.checkbox = "hidden";
+    spring.style.visibility = "hidden";
   }
 });
 
 DOMSelectors.wintercheckbox.addEventListener("click", function () {
-  let winter = DOMSelectors.winterimage;
-  let wintertf = 1;
-  if (wintertf > 0) {
-    fall.style.visibility = "hidden";
-    spring.style.visibility = "hidden";
-    winter.style.visibility = "visible";
+  if (DOMSelectors.wintercheckbox.checked) {
+    console.log("The checkbox is checked");
   } else {
-    fall.style.visibility = "hidden";
-    spring.style.visibility = "hidden";
-    winter.style.visibility = "hidden";
   }
 });
 
 DOMSelectors.springcheckbox.addEventListener("click", function () {
-  let spring = DOMSelectors.springimage;
-  let springtf = 1;
-  if (springtf > 0) {
-    fall.style.visibility = "hidden";
-    spring.style.visibility = "visible";
-    winter.style.visibility = "hidden";
+  if (DOMSelectors.springcheckbox.checked) {
+    console.log("The checkbox is checked");
   } else {
-    fall.style.visibility = "hidden";
-    spring.style.visibility = "hidden";
-    winter.style.visibility = "hidden";
   }
 });
 
 DOMSelectors.housecheckbox.addEventListener("click", function () {
-  let house = DOMSelectors.houseimage;
-  let housetf = 1;
-  if (housetf > 0) {
-    house.style.visibility = "visible";
-    shack.style.visibility = "hidden";
-    skyscraper.style.visibility = "hidden";
-    tower.style.visibility = "hidden";
+  if (DOMSelectors.housecheckbox.checked) {
+    console.log("The checkbox is checked");
   } else {
-    house.style.visibility = "hidden";
-    shack.style.visibility = "hidden";
-    skyscraper.style.visibility = "hidden";
-    tower.style.visibility = "hidden";
   }
 });
 
 DOMSelectors.shackcheckbox.addEventListener("click", function () {
-  let shack = DOMSelectors.shackimage;
-  let shacktf = 1;
-  if (shacktf > 0) {
-    house.style.visibility = "hidden";
-    shack.style.visibility = "visible";
-    skyscraper.style.visibility = "hidden";
-    tower.style.visibility = "hidden";
+  if (DOMSelectors.shackcheckbox.checked) {
+    console.log("The checkbox is checked");
   } else {
-    house.style.visibility = "hidden";
-    shack.style.visibility = "hidden";
-    skyscraper.style.visibility = "hidden";
-    tower.style.visibility = "hidden";
   }
 });
 
 DOMSelectors.skyscrapercheckbox.addEventListener("click", function () {
-  let skyscraper = DOMSelectors.skyscraperimage;
-  let skyscrapertf = 1;
-  if (skyscrapertf > 0) {
-    house.style.visibility = "hidden";
-    shack.style.visibility = "hidden";
-    skyscraper.style.visibility = "visible";
-    tower.style.visibility = "hidden";
+  if (DOMSelectors.skyscrapercheckbox.checked) {
+    console.log("The checkbox is checked");
   } else {
-    house.style.visibility = "hidden";
-    shack.style.visibility = "hidden";
-    skyscraper.style.visibility = "hidden";
-    tower.style.visibility = "hidden";
   }
 });
 
 DOMSelectors.towercheckbox.addEventListener("click", function () {
-  let tower = DOMSelectors.towerimage;
-  let towertf = 1;
-  if (towertf > 0) {
-    house.style.visibility = "hidden";
-    shack.style.visibility = "hidden";
-    skyscraper.style.visibility = "hidden";
-    tower.style.visibility = "visible";
+  if (DOMSelectors.towercheckbox.checked) {
+    console.log("The checkbox is checked");
   } else {
-    house.style.visibility = "hidden";
-    shack.style.visibility = "hidden";
-    skyscraper.style.visibility = "hidden";
-    tower.style.visibility = "hidden";
   }
 });
 
 DOMSelectors.johncheckbox.addEventListener("click", function () {
-  let john = DOMSelectors.johnimage;
-  let johntf = 1;
-  if (johntf > 0) {
-    john.style.visibility = "visible";
-    joe.style.visibility = "hidden";
-    jonathan.style.visibility = "hidden";
-    void1.style.visibility = "hidden";
+  if (DOMSelectors.johncheckbox.checked) {
+    console.log("The checkbox is checked");
   } else {
-    john.style.visibility = "hidden";
-    joe.style.visibility = "hidden";
-    jonathan.style.visibility = "hidden";
-    void1.style.visibility = "hidden";
   }
 });
 
 DOMSelectors.joecheckbox.addEventListener("click", function () {
-  let joe = DOMSelectors.joeimage;
-  let joetf = 1;
-  if (joetf > 0) {
-    john.style.visibility = "hidden";
-    joe.style.visibility = "visible";
-    jonathan.style.visibility = "hidden";
-    void1.style.visibility = "hidden";
+  if (DOMSelectors.joecheckbox.checked) {
+    console.log("The checkbox is checked");
   } else {
-    john.style.visibility = "hidden";
-    joe.style.visibility = "hidden";
-    jonathan.style.visibility = "hidden";
-    void1.style.visibility = "hidden";
   }
 });
 
 DOMSelectors.jonathancheckbox.addEventListener("click", function () {
-  let jonathan = DOMSelectors.jonathanimage;
-  let jonathantf = 1;
-  if (jonathantf > 0) {
-    john.style.visibility = "hidden";
-    joe.style.visibility = "hidden";
-    jonathan.style.visibility = "visible";
-    void1.style.visibility = "hidden";
+  if (DOMSelectors.jonathancheckbox.checked) {
+    console.log("The checkbox is checked");
   } else {
-    john.style.visibility = "hidden";
-    joe.style.visibility = "hidden";
-    jonathan.style.visibility = "hidden";
-    void1.style.visibility = "hidden";
   }
 });
 
 DOMSelectors.void1checkbox.addEventListener("click", function () {
-  let void1 = DOMSelectors.void1image;
-  let void1tf = 1;
-  if (void1tf > 0) {
-    john.style.visibility = "hidden";
-    joe.style.visibility = "hidden";
-    jonathan.style.visibility = "hidden";
-    void1.style.visibility = "visible";
+  if (DOMSelectors.void1checkbox.checked) {
+    console.log("The checkbox is checked");
   } else {
-    john.style.visibility = "hidden";
-    joe.style.visibility = "hidden";
-    jonathan.style.visibility = "hidden";
-    void1.style.visibility = "hidden";
   }
 });
 
