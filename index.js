@@ -180,13 +180,11 @@ let johntf = 0;
 let joetf = 0;
 let jonathantf = 0;
 let void1tf = 0;
-
-let fallcheckbox = document.getElementById("bfall");
-
+console.log(DOMSelectors.fallcheckbox);
 DOMSelectors.fallcheckbox.addEventListener("click", function () {
   // let fall = DOMSelectors.fallimage;
   // let falltf = 1;
-  if (fallcheckbox.checked) {
+  if (DOMSelectors.fallcheckbox.checked) {
     console.log("The checkbox is checked");
   } else {
     fall.checkbox = "hidden";
@@ -194,8 +192,6 @@ DOMSelectors.fallcheckbox.addEventListener("click", function () {
     winter.checkbox = "hidden";
   }
 });
-
-console.log(fallcheckbox);
 
 DOMSelectors.wintercheckbox.addEventListener("click", function () {
   let winter = DOMSelectors.winterimage;
