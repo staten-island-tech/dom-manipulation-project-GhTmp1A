@@ -170,7 +170,6 @@ document.getElementById("form").addEventListener("submit", function (e) {
   e.preventDefault();
 });
 
-// let falltf = 0;
 let wintertf = 0;
 let springtf = 0;
 let housetf = 0;
@@ -182,19 +181,21 @@ let joetf = 0;
 let jonathantf = 0;
 let void1tf = 0;
 
+let fallcheckbox = document.getElementById("bfall");
+
 DOMSelectors.fallcheckbox.addEventListener("click", function () {
   // let fall = DOMSelectors.fallimage;
   // let falltf = 1;
   if (fallcheckbox.checked) {
-    fall.checkbox = "unchecked";
-    spring.checkbox = "unchecked";
-    winter.checkbox = "unchecked";
+    console.log("The checkbox is checked");
   } else {
     fall.checkbox = "hidden";
     spring.checkbox = "hidden";
     winter.checkbox = "hidden";
   }
 });
+
+console.log(fallcheckbox);
 
 DOMSelectors.wintercheckbox.addEventListener("click", function () {
   let winter = DOMSelectors.winterimage;
@@ -352,16 +353,16 @@ DOMSelectors.void1checkbox.addEventListener("click", function () {
   }
 });
 
-DOMSelectors.createplanetbutton.addEventListener("click", function () {
+/* DOMSelectors.createplanetbutton.addEventListener("click", function () {
   if (falltf > 0) {
     fall.style.visibility = "visible";
   }
-});
+}); */
 
-DOMSelectors.displayplanet.addEventListener("click", function () {
+/* DOMSelectors.displayplanet.addEventListener("click", function () {
   let createplanet = DOMSelectors.createplanet.create;
 });
-
+ */
 function makeCard() {
   DOMSelectors.input.addEventListener("submit", function () {
     let input = DOMSelectors.input.value;
