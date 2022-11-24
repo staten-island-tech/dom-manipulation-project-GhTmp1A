@@ -166,7 +166,7 @@ DOMSelectors.void1button.addEventListener("click", function () {
   DOMSelectors.outputbox.innerHTML = "";
 }); */
 
-document.getElementById("form").addEventListener("submit", function (e) {
+/* document.getElementById("form").addEventListener("submit", function (e) {
   e.preventDefault();
 });
 
@@ -179,86 +179,173 @@ let towertf = 0;
 let johntf = 0;
 let joetf = 0;
 let jonathantf = 0;
-let void1tf = 0;
-console.log(DOMSelectors.fallcheckbox);
+let void1tf = 0; */
+
 DOMSelectors.fallcheckbox.addEventListener("click", function () {
   // let fall = DOMSelectors.fallimage;
   // let falltf = 1;
   if (DOMSelectors.fallcheckbox.checked) {
-    console.log("The checkbox is checked");
+    DOMSelectors.fallcheckbox.checked = true;
+    DOMSelectors.wintercheckbox.checked = false;
+    DOMSelectors.springcheckbox.checked = false;
   } else {
-    spring.style.visibility = "hidden";
   }
 });
 
 DOMSelectors.wintercheckbox.addEventListener("click", function () {
   if (DOMSelectors.wintercheckbox.checked) {
-    console.log("The checkbox is checked");
+    DOMSelectors.fallcheckbox.checked = false;
+    DOMSelectors.wintercheckbox.checked = true;
+    DOMSelectors.springcheckbox.checked = false;
   } else {
   }
 });
 
 DOMSelectors.springcheckbox.addEventListener("click", function () {
   if (DOMSelectors.springcheckbox.checked) {
-    console.log("The checkbox is checked");
+    DOMSelectors.fallcheckbox.checked = false;
+    DOMSelectors.wintercheckbox.checked = false;
+    DOMSelectors.springcheckbox.checked = true;
   } else {
   }
 });
 
 DOMSelectors.housecheckbox.addEventListener("click", function () {
   if (DOMSelectors.housecheckbox.checked) {
-    console.log("The checkbox is checked");
+    DOMSelectors.housecheckbox.checked = true;
+    DOMSelectors.shackcheckbox.checked = false;
+    DOMSelectors.skyscrapercheckbox.checked = false;
+    DOMSelectors.towercheckbox.checked = false;
   } else {
   }
 });
 
 DOMSelectors.shackcheckbox.addEventListener("click", function () {
   if (DOMSelectors.shackcheckbox.checked) {
-    console.log("The checkbox is checked");
+    DOMSelectors.housecheckbox.checked = false;
+    DOMSelectors.shackcheckbox.checked = true;
+    DOMSelectors.skyscrapercheckbox.checked = false;
+    DOMSelectors.towercheckbox.checked = false;
   } else {
   }
 });
 
 DOMSelectors.skyscrapercheckbox.addEventListener("click", function () {
   if (DOMSelectors.skyscrapercheckbox.checked) {
-    console.log("The checkbox is checked");
+    DOMSelectors.housecheckbox.checked = false;
+    DOMSelectors.shackcheckbox.checked = false;
+    DOMSelectors.skyscrapercheckbox.checked = true;
+    DOMSelectors.towercheckbox.checked = false;
   } else {
   }
 });
 
 DOMSelectors.towercheckbox.addEventListener("click", function () {
   if (DOMSelectors.towercheckbox.checked) {
-    console.log("The checkbox is checked");
+    DOMSelectors.housecheckbox.checked = false;
+    DOMSelectors.shackcheckbox.checked = false;
+    DOMSelectors.skyscrapercheckbox.checked = false;
+    DOMSelectors.towercheckbox.checked = true;
   } else {
   }
 });
 
 DOMSelectors.johncheckbox.addEventListener("click", function () {
   if (DOMSelectors.johncheckbox.checked) {
-    console.log("The checkbox is checked");
+    DOMSelectors.johncheckbox.checked = true;
+    DOMSelectors.joecheckbox.checked = false;
+    DOMSelectors.jonathancheckbox.checked = false;
+    DOMSelectors.void1checkbox.checked = false;
   } else {
   }
 });
 
 DOMSelectors.joecheckbox.addEventListener("click", function () {
   if (DOMSelectors.joecheckbox.checked) {
-    console.log("The checkbox is checked");
+    DOMSelectors.johncheckbox.checked = false;
+    DOMSelectors.joecheckbox.checked = true;
+    DOMSelectors.jonathancheckbox.checked = false;
+    DOMSelectors.void1checkbox.checked = false;
   } else {
   }
 });
 
 DOMSelectors.jonathancheckbox.addEventListener("click", function () {
   if (DOMSelectors.jonathancheckbox.checked) {
-    console.log("The checkbox is checked");
+    DOMSelectors.johncheckbox.checked = false;
+    DOMSelectors.joecheckbox.checked = false;
+    DOMSelectors.jonathancheckbox.checked = true;
+    DOMSelectors.void1checkbox.checked = false;
   } else {
   }
 });
 
 DOMSelectors.void1checkbox.addEventListener("click", function () {
   if (DOMSelectors.void1checkbox.checked) {
-    console.log("The checkbox is checked");
+    DOMSelectors.johncheckbox.checked = false;
+    DOMSelectors.joecheckbox.checked = false;
+    DOMSelectors.jonathancheckbox.checked = false;
+    DOMSelectors.void1checkbox.checked = true;
   } else {
   }
+});
+
+DOMSelectors.createplanetbutton.addEventListener("click", function () {
+  DOMSelectors.createplanetbutton.addEventListener("click", function () {
+    if (DOMSelectors.void1checkbox.checked) {
+      void1.style.visibility = "visible";
+    } else if (DOMSelectors.johncheckbox.checked) {
+      john.style.visibility = "visible";
+    } else if (DOMSelectors.jonathancheckbox.checked) {
+      jonathan.style.visibility = "visible";
+    } else if (DOMSelectors.joecheckbox.checked) {
+      joe.style.visibility = "visible";
+    }
+  });
+  DOMSelectors.createplanetbutton.addEventListener("click", function () {
+    if (DOMSelectors.fallcheckbox.checked) {
+      fall.style.visibility = "visible";
+    } else if (DOMSelectors.springcheckbox.checked) {
+      spring.style.visibility = "visible";
+    } else if (DOMSelectors.wintercheckbox.checked) {
+      winter.style.visibility = "visible";
+    }
+  });
+  DOMSelectors.createplanetbutton.addEventListener("click", function () {
+    if (DOMSelectors.shackcheckbox.checked) {
+      shack.style.visibility = "visible";
+    } else if (DOMSelectors.skyscrapercheckbox.checked) {
+      skyscraper.style.visibility = "visible";
+    } else if (DOMSelectors.towercheckbox.checked) {
+      tower.style.visibility = "visible";
+    } else if (DOMSelectors.housecheckbox.checked) {
+      house.style.visibility = "visible";
+    }
+  });
+  /*   if (DOMSelectors.void1checkbox.checked) {
+    console.log("This checkbox is checked!");
+  } else if (DOMSelectors.johncheckbox.checked) {
+    console.log("This checkbox is checked!");
+  } else if (DOMSelectors.jonathancheckbox.checked) {
+    console.log("This checkbox is checked!");
+  } else if (DOMSelectors.joecheckbox.checked) {
+    console.log("This checkbox is checked!");
+  } else if (DOMSelectors.shackcheckbox.checked) {
+    console.log("This checkbox is checked!");
+  } else if (DOMSelectors.skyscrapercheckbox.checked) {
+    console.log("This checkbox is checked!");
+  } else if (DOMSelectors.towercheckbox.checked) {
+    console.log("This checkbox is checked!");
+  } else if (DOMSelectors.housecheckbox.checked) {
+    console.log("This checkbox is checked!");
+  } else if (DOMSelectors.fallcheckbox.checked) {
+    console.log("This checkbox is checked!");
+  } else if (DOMSelectors.springcheckbox.checked) {
+    console.log("This checkbox is checked!");
+  } else if (DOMSelectors.wintercheckbox.checked) {
+    console.log("This checkbox is checked!");
+  } else {
+  } */
 });
 
 /* DOMSelectors.createplanetbutton.addEventListener("click", function () {
