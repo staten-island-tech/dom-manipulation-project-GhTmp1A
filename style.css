@@ -12,6 +12,11 @@
   
   */
 
+  body{
+  background: linear-gradient(rgb(58, 128, 194),rgb(113, 186, 255),rgb(58, 128, 194));
+  }
+
+
   #container-box{
     background-color: white;
     font-size: 2vh;
@@ -26,16 +31,15 @@
 .h1{
   text-align: center;
   margin: auto;
+  background-color: red;
+  border: 5px;
 }
 
 .createplanet{
   align-items: center;
 }
 
-body{
-  flex-wrap: wrap;
-  margin: 0%;
-}
+
 
 button{
   font-size: 2.5vh;
@@ -46,13 +50,13 @@ button{
   border: solid black 5px;
   border-radius: 5px;
   background: linear-gradient( rgb(228, 224, 224) , rgb(189, 167, 119), rgb(26, 82, 33)) ;
-  margin-left: 7.5%;
-  margin-right: 7.5%;
+  margin-left: 15%;
+  margin-right: 15%;
   
 }
 
 .form-input{
-  margin: 2vh;
+
 }
 
 .image{
@@ -62,12 +66,18 @@ button{
   visibility: hidden;
 }
 
-.checkbox{
-
+.text{
+  background: linear-gradient(rgb(148, 216, 148),rgb(98, 143, 98)) ;
+  padding: 1px;
+  margin-top: 1%;
+  margin-left: 30%;
+  margin-right: 30%;
+  border: solid 5px black;
+  border-radius: 3px;
 }
-.form-input{
+.display{
+  
 }
-
 .removeplanet{
   align-items: center;
   text-align: center;

@@ -5,6 +5,7 @@ const DOMSelectors = {
   creature: document.getElementById("creature"),
   createplanet: document.querySelector("create"),
   displayplanet: document.getElementById("displayplanet"),
+  test: document.getElementById("removebtntest"),
 
   /*   delete: document.getElementById("removeplanet"), */
 
@@ -290,62 +291,81 @@ DOMSelectors.void1checkbox.addEventListener("click", function () {
   }
 });
 
-DOMSelectors.createplanetbutton.addEventListener("click", function () {
-  DOMSelectors.createplanetbutton.addEventListener("click", function () {
-    if (DOMSelectors.void1checkbox.checked) {
-      void1.style.visibility = "visible";
-    } else if (DOMSelectors.johncheckbox.checked) {
-      john.style.visibility = "visible";
-    } else if (DOMSelectors.jonathancheckbox.checked) {
-      jonathan.style.visibility = "visible";
-    } else if (DOMSelectors.joecheckbox.checked) {
-      joe.style.visibility = "visible";
-    }
-  });
-  DOMSelectors.createplanetbutton.addEventListener("click", function () {
-    if (DOMSelectors.fallcheckbox.checked) {
-      fall.style.visibility = "visible";
-    } else if (DOMSelectors.springcheckbox.checked) {
-      spring.style.visibility = "visible";
-    } else if (DOMSelectors.wintercheckbox.checked) {
-      winter.style.visibility = "visible";
-    }
-  });
-  DOMSelectors.createplanetbutton.addEventListener("click", function () {
-    if (DOMSelectors.shackcheckbox.checked) {
-      shack.style.visibility = "visible";
-    } else if (DOMSelectors.skyscrapercheckbox.checked) {
-      skyscraper.style.visibility = "visible";
-    } else if (DOMSelectors.towercheckbox.checked) {
-      tower.style.visibility = "visible";
-    } else if (DOMSelectors.housecheckbox.checked) {
-      house.style.visibility = "visible";
-    }
-  });
-  /*   if (DOMSelectors.void1checkbox.checked) {
-    console.log("This checkbox is checked!");
+let createplanetbutton = document.getElementById("bcreate");
+
+createplanetbutton.addEventListener("click", function () {
+  if (DOMSelectors.void1checkbox.checked) {
+    void1.style.visibility = "visible";
   } else if (DOMSelectors.johncheckbox.checked) {
-    console.log("This checkbox is checked!");
+    john.style.visibility = "visible";
   } else if (DOMSelectors.jonathancheckbox.checked) {
-    console.log("This checkbox is checked!");
+    jonathan.style.visibility = "visible";
   } else if (DOMSelectors.joecheckbox.checked) {
-    console.log("This checkbox is checked!");
-  } else if (DOMSelectors.shackcheckbox.checked) {
-    console.log("This checkbox is checked!");
-  } else if (DOMSelectors.skyscrapercheckbox.checked) {
-    console.log("This checkbox is checked!");
-  } else if (DOMSelectors.towercheckbox.checked) {
-    console.log("This checkbox is checked!");
-  } else if (DOMSelectors.housecheckbox.checked) {
-    console.log("This checkbox is checked!");
-  } else if (DOMSelectors.fallcheckbox.checked) {
-    console.log("This checkbox is checked!");
+    joe.style.visibility = "visible";
+  }
+});
+createplanetbutton.addEventListener("click", function () {
+  if (DOMSelectors.fallcheckbox.checked) {
+    fall.style.visibility = "visible";
   } else if (DOMSelectors.springcheckbox.checked) {
-    console.log("This checkbox is checked!");
+    spring.style.visibility = "visible";
   } else if (DOMSelectors.wintercheckbox.checked) {
-    console.log("This checkbox is checked!");
-  } else {
-  } */
+    winter.style.visibility = "visible";
+  }
+});
+createplanetbutton.addEventListener("click", function () {
+  if (DOMSelectors.shackcheckbox.checked) {
+    shack.style.visibility = "visible";
+  } else if (DOMSelectors.skyscrapercheckbox.checked) {
+    skyscraper.style.visibility = "visible";
+  } else if (DOMSelectors.towercheckbox.checked) {
+    tower.style.visibility = "visible";
+  } else if (DOMSelectors.housecheckbox.checked) {
+    house.style.visibility = "visible";
+  }
+
+  /*     DOMSelectors.displayplanet.insertAdjacentHTML(
+      "`afterend`",
+      `<div class="finalplanet"> <button id= "delete">Delete planet</button> </div>`
+    ); */
+});
+
+DOMSelectors.createplanetbutton.addEventListener("click", function () {
+  DOMSelectors.test.insertAdjacentHTML(
+    `afterend`,
+    `<div class="finalplanet"> <button id= "delete">Delete planet</button> </div>`
+  );
+
+  let deleteplanet = document.querySelector("#delete");
+
+  deleteplanet.addEventListener("click", function () {
+    deleteplanet.remove();
+    void1.style.visibility = "hidden";
+    john.style.visibility = "hidden";
+    jonathan.style.visibility = "hidden";
+    joe.style.visibility = "hidden";
+    fall.style.visibility = "hidden";
+    spring.style.visibility = "hidden";
+    winter.style.visibility = "hidden";
+    shack.style.visibility = "hidden";
+    skyscraper.style.visibility = "hidden";
+    tower.style.visibility = "hidden";
+    house.style.visibility = "hidden";
+  });
+});
+
+createplanetbutton.addEventListener("click", function () {
+  DOMSelectors.void1checkbox.checked = false;
+  DOMSelectors.johncheckbox.checked = false;
+  DOMSelectors.jonathancheckbox.checked = false;
+  DOMSelectors.joecheckbox.checked = false;
+  DOMSelectors.fallcheckbox.checked = false;
+  DOMSelectors.springcheckbox.checked = false;
+  DOMSelectors.wintercheckbox.checked = false;
+  DOMSelectors.shackcheckbox.checked = false;
+  DOMSelectors.skyscrapercheckbox.checked = false;
+  DOMSelectors.towercheckbox.checked = false;
+  DOMSelectors.housecheckbox.checked = false;
 });
 
 /* DOMSelectors.createplanetbutton.addEventListener("click", function () {
