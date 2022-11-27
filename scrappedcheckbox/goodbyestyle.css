@@ -1,0 +1,93 @@
+/* #big-black-box {
+    background-color: black; 
+    font-size: 2vh;
+    color: cornsilk;
+    height: 100vh;
+    text-align: center;
+  } 
+    .cat-poster{
+    width: 10rem;
+  }
+
+  
+  */
+
+  body{
+  background: linear-gradient(rgb(58, 128, 194),rgb(113, 186, 255),rgb(58, 128, 194));
+  }
+
+
+  #container-box{
+    background-color: white;
+    font-size: 2vh;
+    color: black;
+    text-align: center;
+  }
+  
+.form-input, .hero-form-input{
+  text-align: center;
+}
+
+.h1{
+  text-align: center;
+  margin: auto;
+  border: 5px;
+}
+
+.createplanet{
+  align-items: center;
+}
+
+
+
+button{
+  font-size: 2.5vh;
+}
+
+.form-parent{
+  margin: 1vh;
+  border: solid black 5px;
+  border-radius: 5px;
+  background: linear-gradient( rgb(228, 224, 224) , rgb(189, 167, 119), rgb(26, 82, 33)) ;
+  margin-left: 15%;
+  margin-right: 15%;
+  
+}
+
+.delete{
+  text-align: center;
+}
+
+.titlelabel{
+  border: solid 2.5px rgb(0, 0, 0);
+  margin: 7.5px;
+}
+
+.form-input{
+
+}
+
+.image{
+  position: absolute;
+  margin: 2vh;
+  align-items: center;
+  visibility: hidden;
+}
+
+.text{
+  background: linear-gradient(rgb(148, 216, 148),rgb(98, 143, 98)) ;
+  padding: 1px;
+  margin-top: 1%;
+  margin-left: 30%;
+  margin-right: 30%;
+  border: solid 5px black;
+  border-radius: 3px;
+}
+.display{
+  
+}
+.removeplanet{
+  align-items: center;
+  text-align: center;
+  margin: auto;
+}

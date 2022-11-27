@@ -1,85 +1,59 @@
-/* #big-black-box {
-    background-color: black; 
-    font-size: 2vh;
-    color: cornsilk;
-    height: 100vh;
+html,
+body{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-size: 62.5%;
     text-align: center;
-  } 
-    .cat-poster{
-    width: 10rem;
-  }
-
-  
-  */
-
-  body{
-  background: linear-gradient(rgb(58, 128, 194),rgb(113, 186, 255),rgb(58, 128, 194));
-  }
-
-
-  #container-box{
-    background-color: white;
-    font-size: 2vh;
-    color: black;
-    text-align: center;
-  }
-  
-.form-input, .hero-form-input{
-  text-align: center;
+    background: linear-gradient(rgb(248, 248, 248), rgb(255, 255, 255), rgb(248, 248, 248));
 }
 
-.h1{
-  text-align: center;
-  margin: auto;
-  background-color: red;
-  border: 5px;
+h1{
+    font-size: 3rem;
 }
 
-.createplanet{
-  align-items: center;
+.form-inputs{
+    font-size: 2rem;
 }
 
-
-
-button{
-  font-size: 2.5vh;
+.btncombination{
+    
 }
 
-.form-parent{
-  margin: 1vh;
-  border: solid black 5px;
-  border-radius: 5px;
-  background: linear-gradient( rgb(228, 224, 224) , rgb(189, 167, 119), rgb(26, 82, 33)) ;
-  margin-left: 15%;
-  margin-right: 15%;
-  
-}
-
-.form-input{
+#displaycard{
+    background-color: black;
+    color: whitesmoke;
+    font-size: 2rem;
+    border: solid 3px rgb(70, 70, 70);
+    border-radius: 2px;
+    width: 90rem;
+    max-width: fit-content;
+    margin: .5rem;
+    padding: .75rem ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 
 }
 
-.image{
-  position: absolute;
-  margin: 2vh;
-  align-items: center;
-  visibility: hidden;
+#cdelete{
+    font-size: 2.5rem;
 }
 
-.text{
-  background: linear-gradient(rgb(148, 216, 148),rgb(98, 143, 98)) ;
-  padding: 1px;
-  margin-top: 1%;
-  margin-left: 30%;
-  margin-right: 30%;
-  border: solid 5px black;
-  border-radius: 3px;
+#display{
+      display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
-.display{
-  
+.displayimage{
+    height: 17.5rem;
+    align-items: center;
+
 }
-.removeplanet{
-  align-items: center;
-  text-align: center;
-  margin: auto;
+
+#button{
+    margin: 1rem;
+    font-size: 2.5rem;
 }

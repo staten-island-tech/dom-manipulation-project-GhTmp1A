@@ -1,0 +1,136 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 class="h1">
+      Make a wacky planet! (Except you only have a few options to choose from)
+    </h1>
+    <section class="form-parent">
+      <form id="form" class="text">
+        <div class="form-input">
+          <label for="title" class="titlelabel">Season</label>
+          <div class="checkbox">
+            <label for="winter">Winter</label>
+            <input type="checkbox" id="bwinter" />
+          </div>
+          <div class="checkbox">
+            <label for="spring">Spring</label>
+            <input type="checkbox" id="bspring" />
+          </div>
+          <div class="checkbox">
+            <label for="fall">Fall</label>
+            <input type="checkbox" id="bfall" />
+          </div>
+        </div>
+        <div class="form-input">
+          <label for="building" class="titlelabel">Building</label>
+          <div class="checkbox">
+            <label for="house">House</label>
+            <input type="checkbox" id="bhouse" />
+          </div>
+          <div class="checkbox">
+            <label for="tower">Tower</label>
+            <input type="checkbox" id="btower" />
+          </div>
+          <div class="checkbox">
+            <label for="skyscraper">Skyscraper</label>
+            <input type="checkbox" id="bskyscraper" />
+          </div>
+          <div class="checkbox">
+            <label for="shack">Shack</label>
+            <input type="checkbox" id="bshack" />
+          </div>
+        </div>
+        <div class="form-input">
+          <label for="Creature" class="titlelabel">Creature</label>
+          <div class="checkbox">
+            <label for="joe">Joe</label>
+            <input type="checkbox" id="bjoe" />
+          </div>
+          <div class="checkbox">
+            <label for="jonathan">Jonathan</label>
+            <input type="checkbox" id="bjonathan" />
+          </div>
+          <div class="checkbox">
+            <label for="john">John</label>
+            <input type="checkbox" id="bjohn" />
+          </div>
+          <div class="checkbox">
+            <label for="void1">void</label>
+            <input type="checkbox" id="bvoid1" />
+          </div>
+        </div>
+        <div class="hero-form-input">
+          <button type="button" id="bcreate">Create planet</button>
+        </div>
+        <div class="delete">
+          <button type="button" id="delete">Delete planet</button>
+        </div>
+      </form>
+    </section>
+    <section class="display" id="display">
+      <div class="planet"></div>
+      <div id="displayplanet">
+        <div class="season" style="position: relative">
+          <img src="imgs/Fall.png" alt="fall planet" class="image" id="fall" />
+          <img src="imgs/Winter.png" alt="Winter" class="image" id="winter" />
+          <img
+            src="imgs/Spring.png"
+            alt="Spring Planet"
+            class="image"
+            id="spring"
+          />
+        </div>
+        <div class="building" style="position: relative">
+          <img src="imgs/House.png" alt="House" class="image" id="house" />
+
+          <img
+            src="imgs/Skyscraper.png"
+            alt="Skyscraper"
+            class="image"
+            id="skyscraper"
+          />
+          <img src="imgs/tower.png" alt="Tower" class="image" id="tower" />
+          <img src="imgs/Shack.png" alt="Shack" class="image" id="shack" />
+        </div>
+        <div class="creature" style="position: relative">
+          <img src="imgs/john.png" alt="John" class="image" id="john" />
+          <img src="imgs/joe.png" alt="Joe" class="image" id="joe" />
+          <img
+            src="imgs/jonathan.png"
+            alt="jonathan"
+            class="image"
+            id="jonathan"
+          />
+          <img src="imgs/void.png" alt="void1" class="image" id="void1" />
+        </div>
+      </div>
+    </section>
+    <!--     <div id="container-box">
+      <p id="text">
+        The amazing wacky crazy absurd unbelievable bananas new and improved
+        first edition original copy signed by author self-made generically
+        manufacturable indescribable amazing wacky
+      </p>
+      <h6 class="h6">You never know what comes out on the other side</h6>
+
+      <input type="text" id="input" />
+      <button type="sendbutton" id="send-btn">Send</button>
+      <button type="clearbutton" id="clear-btn">Clear</button>
+      <button type="sendclear" id="sendclear-btn">Send and Clear</button>
+      <button type=" id="delete-btn">Delete</button>
+      <div id="output-box"></div>
+             <ul>
+        <li class="point">1</li>
+        <li class="point">2</li>
+        <li class="point">3</li>
+      </ul> 
+    </div> -->
+    <script src="index.js"></script>
+  </body>
+</html>
